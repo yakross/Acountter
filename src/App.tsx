@@ -210,7 +210,7 @@ function AppContent() {
         <ErrorBoundary fallbackRender={({ error }) => (
           <div className="p-4 bg-red-50 text-red-700 border border-red-200 rounded-lg">
             <h2 className="font-bold mb-2">Ha ocurrido un error en la aplicación:</h2>
-            <pre className="text-sm whitespace-pre-wrap">{error.message}</pre>
+            <pre className="text-sm whitespace-pre-wrap">{error instanceof Error ? error.message : String(error)}</pre>
           </div>
         )}>
           <Suspense fallback={<Spinner />}>
