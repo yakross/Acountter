@@ -7,44 +7,51 @@
 <h4 align="center">Una aplicación inteligente para la gestión de finanzas personales, presupuestos y control de gastos.</h4>
 
 <p align="center">
-  <a href="#características-principales">Características</a> •
-  <a href="#stack-tecnológico">Tecnologías</a> •
-  <a href="#instalación-y-uso">Instalación</a> •
-  <a href="#estructura-del-proyecto">Estructura</a> •
-  <a href="#licencia">Licencia</a>
+  <a href="#-mini-resumen-de-un-vistazo">Mini Resumen</a> •
+  <a href="#-características-principales">Características</a> •
+  <a href="#-stack-tecnológico">Tecnologías</a> •
+  <a href="#-instalación-y-uso">Instalación</a> •
+  <a href="#-estructura-del-proyecto">Estructura</a>
 </p>
 
-![Screenshot de la Aplicación](https://via.placeholder.com/1000x500.png?text=Acountter+Dashboard+Preview)
+---
 
-## 📋 Descripción General
+## ⚡ Mini Resumen (De un vistazo)
 
-**Acountter** es una aplicación integral diseñada para empoderar a los usuarios en la gestión de sus finanzas personales. Integrando un robusto sistema de seguimiento de gastos con análisis inteligentes, la plataforma facilita la creación de presupuestos, el ahorro y la planificación financiera a largo plazo. Su interfaz moderna y minimalista, construida con React y Tailwind CSS, garantiza una experiencia de usuario fluida tanto en dispositivos de escritorio como móviles.
+**Acountter** es tu **asistente financiero personal inteligente**. Es una aplicación diseñada para responder a la pregunta: *¿A dónde se va mi dinero?* 
+
+En pocas palabras, la plataforma te permite:
+1. **Registrar tus finanzas:** Anota tus ingresos y gastos diarios de forma rápida y sencilla.
+2. **Presupuestar inteligentemente:** Distribuye tus ingresos usando metodologías profesionales como la **regla 50/30/20** (Necesidades, Deseos, Ahorro/Deudas).
+3. **Automatizar tus cuentas:** Olvídate de recordar pagos mensuales; la app calcula y registra tus suscripciones y servicios recurrentes de forma automática.
+4. **Analizar con IA:** Recibe consejos financieros personalizados y alertas inteligentes sobre tus hábitos de consumo.
+5. **Proteger tus datos:** Mantén tu información privada a salvo de miradas indiscretas con un sistema de **bloqueo por PIN**.
 
 ---
 
 ## ✨ Características Principales
 
-- **📈 Panel de Control (Dashboard):** Visión general de ingresos, gastos y balances en tiempo real.
-- **🤖 Insights de IA:** Sugerencias y análisis predictivo de gastos generados automáticamente.
-- **💸 Gestión de Transacciones:** Creación, edición y categorización rápida de ingresos y egresos.
-- **🎯 Metas de Ahorro:** Define objetivos financieros y haz un seguimiento visual de tu progreso.
-- **🔄 Pagos Recurrentes:** Configura y automatiza el registro de suscripciones y facturas fijas.
-- **📊 Administrador de Presupuestos:** Aplica la regla **50/30/20** o crea distribuciones personalizadas por categoría.
-- **🔒 Seguridad Avanzada:** Bloqueo de la aplicación mediante **PIN de seguridad** para proteger tu información financiera.
-- **🌙 Modo Oscuro:** Interfaz adaptable a las preferencias del sistema del usuario.
-- **🌍 Soporte Multidivisa:** Cambia entre múltiples monedas (ej. USD/COP) dinámicamente.
+- **📈 Panel de Control (Dashboard):** Visión general de ingresos, gastos y balances en tiempo real con gráficos dinámicos.
+- **🤖 Insights de IA:** Sugerencias y análisis predictivo de gastos generados automáticamente a partir de tus transacciones.
+- **💸 Gestión de Transacciones:** Creación, edición, eliminación y categorización rápida de ingresos y egresos.
+- **🎯 Metas de Ahorro:** Define objetivos financieros (ej. "Comprar PC", "Vacaciones") y haz un seguimiento visual de tu progreso.
+- **🔄 Pagos Recurrentes:** Configura y automatiza el registro de suscripciones y facturas fijas mensuales/anuales.
+- **📊 Administrador de Presupuestos:** Aplica la regla **50/30/20** o crea distribuciones personalizadas por categoría para evitar gastar de más.
+- **🔒 Seguridad Avanzada:** Bloqueo de la aplicación mediante **PIN de seguridad** con auto-bloqueo configurable.
+- **🌙 Modo Oscuro:** Interfaz adaptable que cuida tu vista y ahorra batería.
+- **🌍 Soporte Multidivisa:** Cambia entre múltiples monedas (USD / COP) de forma dinámica e instantánea.
 
 ---
 
 ## 🛠️ Stack Tecnológico
 
-El proyecto está construido bajo un stack moderno y escalable:
+El proyecto está construido bajo un stack moderno, rápido y escalable:
 
-- **Frontend:** React 18, TypeScript, Vite.
-- **Estilos:** Tailwind CSS.
-- **Estado y Contextos:** React Context API, Custom Hooks.
-- **Despliegue y Móvil:** Preparado para PWA y empaquetado móvil con **Capacitor**.
-- **Iconos y UI:** Componentes modulares y Lucide Icons (o similar).
+- **Frontend:** React 18, TypeScript, Vite (para un inicio y desarrollo ultrarrápido).
+- **Estilos:** Tailwind CSS (diseño responsivo y premium).
+- **Estado y Contextos:** React Context API y Custom Hooks para una lógica limpia.
+- **Despliegue y Móvil:** Preparado para PWA y empaquetado móvil híbrido con **Capacitor**.
+- **Seguridad y Almacenamiento:** Integración con almacenamiento local persistente y seguro.
 
 ---
 
@@ -59,7 +66,7 @@ cd Acountter
 ```
 
 ### 2. Instalar las dependencias
-Asegúrate de tener Node.js instalado (v18+).
+Asegúrate de tener Node.js instalado (v18 o superior).
 ```bash
 npm install
 ```
@@ -82,25 +89,25 @@ npm run build
 
 ```text
 Acountter/
-├── android/               # Configuración nativa para compilación móvil (Capacitor)
+├── android/               # Carpeta del proyecto nativo Android (Capacitor)
 ├── src/
-│   ├── components/        # Componentes UI reutilizables (Dashboard, Forms, etc.)
-│   ├── components/ui/     # Sistema de diseño base (Botones, Inputs, Cards)
-│   ├── contexts/          # Estado global (Ej: CurrencyContext)
+│   ├── components/        # Componentes de las vistas (Dashboard, Forms, etc.)
+│   ├── components/ui/     # Botones, entradas y tarjetas del sistema de diseño base
+│   ├── contexts/          # Estado global de la aplicación (Ej: CurrencyContext)
 │   ├── data/              # Datos estáticos y categorías predefinidas
-│   ├── hooks/             # Lógica de negocio (useTransactions, useBudgets, etc.)
-│   ├── services/          # Integración con servicios externos (Ej: AI Service)
-│   ├── types/             # Definiciones de interfaces en TypeScript
-│   ├── utils/             # Funciones de ayuda (formateo, persistencia)
-│   ├── App.tsx            # Enrutador principal y configuración de Vistas
+│   ├── hooks/             # Ganchos personalizados (useTransactions, useBudgets, etc.)
+│   ├── services/          # Integración con lógica inteligente de IA
+│   ├── types/             # Tipado seguro con TypeScript
+│   ├── utils/             # Funciones utilitarias de formateo y almacenamiento
+│   ├── App.tsx            # Enrutador de vistas principal
 │   └── main.tsx           # Punto de entrada de la aplicación
 ├── capacitor.config.ts    # Configuración de Capacitor para PWA/Mobile
-├── tailwind.config.js     # Configuración de los estilos globales
-└── package.json           # Dependencias y scripts
+├── tailwind.config.js     # Configuración de estilos y colores personalizados
+└── package.json           # Dependencias y comandos del proyecto
 ```
 
 ---
 
 ## 🛡️ Licencia
 
-Este proyecto fue desarrollado como parte del portafolio profesional de [Leiner Suarez (yakross)](https://github.com/yakross). Todos los derechos reservados.
+Este proyecto fue desarrollado con dedicación por **[Leiner Suarez (yakross)](https://github.com/yakross)** como un proyecto clave para su portafolio profesional. Todos los derechos reservados.
